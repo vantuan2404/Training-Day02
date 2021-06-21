@@ -1,0 +1,16 @@
+<form action="">
+    <div class="group">
+        <label for="">Mã Sản Phẩm</label>
+        <input type="text" [(ngModel)]="code"  name="code">
+    </div>
+      <div class="group">
+        <label for="">Tên Sản Phẩm</label>
+        <input type="text" [(ngModel)]="name" name="name">
+    </div>
+    <div class="group">
+      <label for="">Gía Sản Phẩm</label>
+      <input type="text" [(ngModel)]="price" name="price">
+  </div>
+  <button type="submit" (click)="addProduct()">Thêm sản phẩm</button>
+  <button (click)="toggleColor()" [color]="color">Click để thay đổi color</button>
+</form>
